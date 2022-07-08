@@ -67,26 +67,26 @@ def cpu():
                     3: "",
                     4: "",
             }
-            if player1 == 'Teacher: 3':
-                player1_Moves = {
-                    1: "",
-                    2: "",
-                    3: "",
-                    4: "",
+           if player1 == 'Teacher: 3':
+               player1_Moves = {
+                   1: "",
+                   2: "",
+                   3: "",
+                   4: "",
             }
-            if player1 == 'Asian Parent: +100':
-                player1_Moves = {
-                    1: "",
-                    2: "",
-                    3: "",
-                    4: "",
+           if player1 == 'Asian Parent: +100':
+               player1_Moves = {
+                   1: "",
+                   2: "",
+                   3: "",
+                   4: "",
             }
-            if player1 == 'American: +6.5':
-                player1_Moves = {
-                    1: "",
-                    2: "",
-                    3: "",
-                    4: "",
+           if player1 == 'American: +6.5':
+               player1_Moves = {
+                   1: "",
+                   2: "",
+                   3: "",
+                   4: "",
             }
 
 def player_2 ():
