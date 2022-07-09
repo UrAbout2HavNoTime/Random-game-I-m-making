@@ -8,4 +8,4 @@ If you wanan make your own game version of this go ahead idc as long as  you sho
 Actually I'll sugesst you use the same characters and make a story mode\
 
 
-THIS IS A JOKE DON'T GET OFFENDED SOME(MOST) OF THE JOKES ARE (well jokes) IF YOU DO GET OFFENDED TAKE A BREATHER AND REALIZE THAT YOU DON'T HAVE TO EXPLODE OVER SOME IGNORANT KIDS WORK - You have veen disclaimed or something idk
+THIS IS A JOKE DON'T GET OFFENDED SOME(MOST) OF THE JOKES ARE (well jokes) IF YOU DO GET OFFENDED TAKE A BREATHER AND REALIZE THAT YOU DON'T HAVE TO EXPLODE OVER SOME IGNORANT KIDS WORK - You have been disclaimed or something idk
