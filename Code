@@ -1,21 +1,26 @@
 import time
+from collections import namedtuple
 import sys
 import random
-characters = {
-    1:'idiot: +2',
-    2:'Ant Queen: +5',
-    3:'Stupid Human: +1.5',
-    4:'Art Degree: +3',
-    5:'furry: -5',
-    6:'Karen: -7',
-    7:'Teacher: 3',
-    8:'Asian Parent: +100',
-    9:'American: +6.5',
+from random import randint
+Character = namedtuple('character_level','move1_name','move2_name','move3_name','move4_name','move1_dmg','move2_dmg','move3_dmg','move4_dmg','move1_self_dmg','move2_self_dmg','move3_self_dmg','move4_self_dmg','move1_self_def','move2_self_def','move3_self_def','move4_self_def','move1_def_op','move2_def_op','move3_def_op','move4_def_op','attrabute_name','attribute_self_dmg','attribute_dmg',"attribute_self_def","attribute_def_op"'character_health','character_defence')
+character_list = []
+idiot = Character(3,'fart','burp','selfpunch','deathstare',randint(1,100),randint(25,50),randint(0,.5),)
+characters_dic = {
+    1: 'idiot: +2',
+    2: 'Ant Queen: +5',
+    3: 'Stupid Human: +1.5',
+    4: 'Art Degree: +3',
+    5: 'furry: -5',
+    6: 'Karen: -7',
+    7: 'Teacher: 3',
+    8: 'Asian Parent: +100',
+    9: 'American: +6.5',
 }
 def cpu():
     print('choose your character')
-    for num, character in characters.items():
-        print(f'{num}-character: {character[:character.index(":")]}; starting_level:{character.split(":",1)[1]}')
+    for num, character in character_list:
+        print(f'{num}-character: {characters_dic[:characters_dic.index(":")]}; starting_level:{characters_dic.split(":",1)[1]}')
         time.sleep(.1)
     choice = input('><-')
 
@@ -25,69 +30,14 @@ def cpu():
         print('You should have put an intiger')
         sys.exit()
     else:
-        for x in range(len(characters)):
+        for x in range(len(characters_dic)):
             if x == choice:
-                player1 = characters.get(x)
+                player1 = characters_dic.get(x)
     print('Player1 choice was ',f'{player1[:player1.index(":")]}')
-    cpu = characters.get(random.randint(1,9))
+    cpu = characters_dic.get(random.randint(1,9))
     print(f'CPU has choice was {cpu}')
     while True:
-        if player1 == 'idiot: +2':
-            player1_Moves = {
-                1:"",
-                2:"",
-                3:"",
-                4:"",
-            }
-        if player1 == 'Ant Queen: +5':
-            player1_Moves = {
-                1:"",
-                2:"",
-                3:"",
-                4:"",
-            }
-        if player1 == 'Stupid Human: +1.5':
-            player1_Moves = {
-                1: "",
-                2: "",
-                3: "",
-                4: "",
-            }
-        if player1 == 'Art Degree: +3':
-            player1_Moves = {
-                1: "",
-                2: "",
-                3: "",
-                4: "",
-            }
-        if player1 == 'furry: -5':
-            player1_Moves = {
-                    1: "",
-                    2: "",
-                    3: "",
-                    4: "",
-            }
-        if player1 == 'Teacher: 3':
-              player1_Moves = {
-                  1: "",
-                  2: "",
-                  3: "",
-                  4: "",
-            }
-        if player1 == 'Asian Parent: +100':
-              player1_Moves = {
-                  1: "",
-                  2: "",
-                  3: "",
-                  4: "",
-            }
-        if player1 == 'American: +6.5':
-              player1_Moves = {
-                  1: "",
-                  2: "",
-                  3: "",
-                  4: "",
-            }
+    pass
 
 def player_2 ():
     pass
